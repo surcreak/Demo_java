@@ -1,18 +1,15 @@
 package com.company;
 
+import com.company.api_demo.CopyOnWriteArrayListDemo;
 import com.company.api_demo.ScheduledExecutorServiceDemo;
 import com.company.api_demo.TimerTaskDemo;
 import com.company.base.BaseDemo;
-
-import static com.company.lintcode.lintcode_1409_findingNumber.findingNumber_1409;
+import com.company.lintcode.lintcode_1006;
+import com.company.lintcode.lintcode_139;
 
 public class Main {
     public static void main(String[] args) {
-
-	    int arr[][] = {{1,2,3}, {3,4,2}, {2,1,8}};
-	    System.out.println(findingNumber_1409(arr));
-
-        BaseDemo demo = new ScheduledExecutorServiceDemo();
+        BaseDemo demo = new CopyOnWriteArrayListDemo();
         demo.launch();
     }
 }

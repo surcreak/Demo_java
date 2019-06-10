@@ -5,9 +5,10 @@ import com.company.base.BaseDemo;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lintcode_1409_findingNumber extends BaseDemo {
+public class lintcode_1409 extends BaseDemo {
+
     @Override
-    public void launch() {
+    public void solution() {
 
     }
 

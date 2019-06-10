@@ -11,10 +11,11 @@ public class ScheduledExecutorServiceDemo extends BaseDemo {
 
     private volatile int count = 0;
 
+    /**
+     * 线程池定时关闭操作。
+     */
     @Override
-    public void launch() {
-        super.launch();
-
+    public void solution() {
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         Runnable runnable = new Runnable() {
             @Override
@@ -27,6 +28,5 @@ public class ScheduledExecutorServiceDemo extends BaseDemo {
             }
         };
         service.scheduleAtFixedRate(runnable, 0, 1, TimeUnit.SECONDS);
-
     }
 }

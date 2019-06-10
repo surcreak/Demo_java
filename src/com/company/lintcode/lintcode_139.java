@@ -5,24 +5,26 @@ import com.company.base.BaseDemo;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class lintcode_139_subarraySumClosest extends BaseDemo {
+/**
+ * 问题：给定一个整数数组，找到一个和最接近于零的子数组。
+ * 返回第一个和最右一个指数。你的代码应该返回满足要求的子数组的起始位置和结束位置
+ *
+ * 解决：
+ * 1、用pair数组，pair中first保存从0到当前数组总和，second保存当前的数组位置
+ * 2、将pair非递减排序。
+ * 3、找出其中相邻相减最小的两个pair。
+ * 4、将这两个pair的位置排序。
+ */
+public class lintcode_139 extends BaseDemo {
 
     @Override
-    public void launch() {
-        super.launch();
+    public void solution() {
+        int [] array = {-3,1,1,-3,5};
+        int [] result = subarraySumClosest_139(array);
+        System.out.println(Arrays.toString(result));
     }
 
-    static class Pair {
-        public int sum;
-        public int index;
-
-        public Pair(int sum, int index) {
-            this.sum = sum;
-            this.index = index;
-        }
-    }
-
-    public static int[] subarraySumClosest_139(int[] nums) {
+    private int[] subarraySumClosest_139(int[] nums) {
         int [] result = new int[2];
         if (nums == null || nums.length == 0) {
             return result;
@@ -61,5 +63,15 @@ public class lintcode_139_subarraySumClosest extends BaseDemo {
         }
 
         return result;
+    }
+
+    static class Pair {
+        public int sum;
+        public int index;
+
+        public Pair(int sum, int index) {
+            this.sum = sum;
+            this.index = index;
+        }
     }
 }

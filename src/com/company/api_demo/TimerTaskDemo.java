@@ -5,14 +5,16 @@ import com.company.base.BaseDemo;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
+/**
+ * TimerTask开启定时和关闭操作。
+ */
 public class TimerTaskDemo extends BaseDemo {
 
     private volatile int count = 0;
 
     @Override
-    public void launch() {
-        super.launch();
-
+    public void solution() {
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
