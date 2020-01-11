@@ -5,7 +5,7 @@ import com.company.base.BaseDemo;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lintcode_1409 extends BaseDemo {
+public class Lintcode_1409 extends BaseDemo {
 
     @Override
     public void solution() {

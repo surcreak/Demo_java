@@ -16,7 +16,7 @@ import java.util.List;
  * 解决：
  * 分割字符串（“.”需要转义），使用map，key是域名，value是计数。
  */
-public class lintcode_1006 extends BaseDemo {
+public class Lintcode_1006 extends BaseDemo {
 
     @Override
     public void solution() {

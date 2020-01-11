@@ -15,7 +15,7 @@ import java.util.Comparator;
  * 3、找出其中相邻相减最小的两个pair。
  * 4、将这两个pair的位置排序。
  */
-public class lintcode_139 extends BaseDemo {
+public class Lintcode_139 extends BaseDemo {
 
     @Override
     public void solution() {
