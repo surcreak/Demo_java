@@ -3,8 +3,12 @@ package com.company.base;
 public abstract class BaseDemo {
     public void launch() {
         System.out.println("-------"+this.getClass().getCanonicalName()+"-------");
-        solution();
+        try {
+            solution();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
-    abstract public void solution();
+    abstract public void solution() throws InterruptedException;
 }
