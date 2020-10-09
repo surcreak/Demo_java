@@ -7,10 +7,11 @@
  import com.company.base.BaseDemo;
  import com.company.lintcode.Lintcode_1006;
  import com.company.lintcode.Lintcode_139;
+ import com.company.nowcoder.BinarySearch;
 
-public class Main {
+ public class Main {
     public static void main(String[] args) {
-         BaseDemo demo = new ScheduledExecutorServiceDemo();
+         BaseDemo demo = new BinarySearch();
          demo.launch();
     }
 }
