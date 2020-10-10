@@ -41,17 +41,17 @@ public class WildcardDemo extends BaseDemo {
     }
 
     public void processElements(List<Fruit> elements) {
-        for(Fruit o : elements)
+        for (Fruit o : elements)
             System.out.println(o.toString());
     }
 
-    public void processElements2(List<?> elements){
-        for(Object o : elements)
+    public void processElements2(List<?> elements) {
+        for (Object o : elements)
             System.out.println(o.toString());
     }
 
-    public void processElements3(List<? extends Fruit> elements){
-        for(Fruit a : elements)
+    public void processElements3(List<? extends Fruit> elements) {
+        for (Fruit a : elements)
             System.out.println(a.toString());
     }
 
@@ -59,17 +59,14 @@ public class WildcardDemo extends BaseDemo {
 }
 
 
-    class Fruit {
+class Fruit {
 
-    }
+}
 
-    class Apple extends Fruit {
+class Apple extends Fruit {
 
-    }
+}
 
-    class Banana extends Fruit {
-
-    }
-
+class Banana extends Fruit {
 
 }
