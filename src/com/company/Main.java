@@ -1,17 +1,14 @@
- package com.company;
+package com.company;
 
- import com.company.api_demo.CopyOnWriteArrayListDemo;
- import com.company.api_demo.CountDownLatchTest;
- import com.company.api_demo.ScheduledExecutorServiceDemo;
- import com.company.api_demo.TimerTaskDemo;
- import com.company.base.BaseDemo;
- import com.company.lintcode.Lintcode_1006;
- import com.company.lintcode.Lintcode_139;
- import com.company.nowcoder.BinarySearch;
+import com.company.api_demo.*;
+import com.company.base.BaseDemo;
+import com.company.lintcode.Lintcode_1006;
+import com.company.lintcode.Lintcode_139;
+import com.company.nowcoder.BinarySearch;
 
- public class Main {
+public class Main {
     public static void main(String[] args) {
-         BaseDemo demo = new BinarySearch();
-         demo.launch();
+        WenLongdemo demo = new WenLongdemo();
+        demo.launch();
     }
 }

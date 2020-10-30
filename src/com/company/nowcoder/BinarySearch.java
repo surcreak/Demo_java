@@ -4,6 +4,7 @@ import com.company.base.BaseDemo;
 
 import java.util.Scanner;
 
+//二分查找
 public class BinarySearch extends BaseDemo {
 
     // https://www.nowcoder.com/practice/7bc4a1c7c371425d9faa9d1b511fe193?tpId=188&&tqId=35618&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
